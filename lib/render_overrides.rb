@@ -6,7 +6,7 @@ HTMLwithSyntaxHighlighting.class_eval do
     # The \2 part is for preventing the whole thing to look like a email address
     # when a dot is following the expression (like "here@wc." which Redmine
     # would try to turn into a mailto link).
-    out.gsub!(/(\w+)@iw([^\w])/, '<a href="https://wiki.innerweb.novell.com/index.php?title=\1">1@iw</a>\2')
-    out.gsub(/(\w+)@c([^\w])/, '<a href="https://connect.opensuse.org/pg/profile/\1">\1@c</a>\2')
+    out.gsub!(/(\w+)@iw([^\w]|$)/, '<a href="https://wiki.innerweb.novell.com/index.php?title=\1">\1@iw</a>\2')
+    out.gsub(/(\w+)@c([^\w]|$)/, '<a href="https://connect.opensuse.org/pg/profile/\1">\1@c</a>\2')
   end
 end
