@@ -27,7 +27,7 @@ Redmine::Plugin.register :wikiformat_opensuse do
   name 'WikiFormat openSUSE'
   author 'Ancor Gonzalez Sosa'
   description 'Adds openSUSE and SUSE related markup to Redmine Redcarpet Formatter plugin'
-  version '0.0.2'
+  version '0.0.3'
   url 'https://github.com/openSUSE-Team/redmine-wikiformat-opensuse'
   author_url 'https://github.com/ancorgs'
 
